@@ -1,5 +1,4 @@
 class CartItemsController < ApplicationController
-
   # def show
   #   @package = Package.find(params[:package_id])
   #   @cart_item = Cart_item.new
@@ -20,7 +19,7 @@ class CartItemsController < ApplicationController
     end
   end
 
- private
+  private
 
   def cart_item_params
     params.require(:cart_item).permit(:quantity)
