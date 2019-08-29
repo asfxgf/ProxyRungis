@@ -1,4 +1,4 @@
-<body>
+
   <div id="container1" class="container" style="height: 300px">
     <h1 class = "mb-5 text-center"> Quand souhaitez vous récupérer vôtre commande ? </h1>
   </div>
@@ -33,8 +33,11 @@
     data-markers="<%= @markers.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
-  <div>
+
+   <div class="box-2">
     <div id="button2"> <%= link_to "Let's Go !", orders_path, class: "btn btn-primary btn-lg btn-flat p-3  pl-5 pr-5 font-weight-bold" %>
     </div>
   </div>
-</body>
+
+
+
